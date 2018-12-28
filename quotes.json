@@ -1,7 +1,7 @@
 {
   "quotes": [
     {
-      "quote": "I have not failed. I've just found 10,000 ways that won't work..",
+      "quote": "I have not failed. I've just found 10,000 ways that won't work.",
       "author": "Thomas Edison"
     },
     {
@@ -9,12 +9,20 @@
       "author": "Eleanor Roosevelt"    
     },
     {
-      "quote": "Nothing is impossible. The word itself says \"I'm possible\"",
-      "author": "Audrey Hepburn"    
+      "quote": "Define success on your own terms, achieve it by your own rules, and build a life you’re proud to live.",
+      "author": "Anne Sweeney"    
     },
     {
-      "quote": "We have to do the best we are capable of. This is our sacred human responsibility.",
-      "author": "Albert Einstein"
+      "quote": "You must expect failure as part of your journey of success, failure and success go hand in hand, you cannot have one without the other.",
+      "author": "Richard Parkes"    
+    },
+    {
+      "quote": "No one ever made a difference by being like everyone else.",
+      "author": "P.T. Barnum"    
+    },
+    {
+      "quote": "I am brave, I am bruised, I am who I'm meant to be – this is me.",
+      "author": "The Greatest Showman"    
     }
   ]
 }
