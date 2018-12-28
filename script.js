@@ -1,8 +1,7 @@
 $(document).ready(function(){
 
-  // Hide div 2 by default
-  $('#about').hide();
-  $('#travels').hide();
+  $('div#about').hide();
+  $('div#travels').hide();
 
   $('#link_about').click(function(){ 
     $('#quotes').hide();
