@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"> 
+
     <!-- add more meta data here -->
 
     <title>dylan fogarty – reader, traveler, professional</title>
@@ -21,26 +22,52 @@
   </head>
 
   <body>
-    <div id="header" class="header">
-      <h1><a href="index.html">Dylan Fogarty</a></h1>
-      <h2><a href="about.html" target="content">About</a> | <a href="reads.html" target="content">Reads</a> | <a href="travels.html" target="content">Travels</a> | <a href="contact.html" target="content">Contact</a></h2>
+    <div id="col-1 header" class="header">
+      <h1><a href="#" id="link_quotes">Dylan Fogarty</a></h1>
+      <div id="menu" class="menu">
+        <h2><a href="#" id="link_about">About</a> | 
+        <a href="#" id="link_reads">Reads</a> | 
+          <a href="#" id="link_travels">Travels</a> | 
+          <a href="#" id="link_social">Social</a></h2>
+      </div>
     </div>
 
     <div class="main">
+      <div class="row">
       <div class="contain">
         <div class="headshot">
           <img src="headshot.jpg">
         </div>
-        <div class="bio">
           <h3>Hello, I'm Dylan!</h3>
-          <p>A twenty-six year old small town Virginian turned big city boy, whom is finally realizing his passion for books and is slowly exploring the world, one country at a time. Living in NYC, working in digital education. </p>
+          <p>A twenty-six year old small town Virginian turned big city boy, whom is finally realizing his passion for books and is actively exploring the world, one country at a time. Currently living in NYC, working in digital education. </p>
         </div>
       </div>
     </div>
 
+    <div id="background" class="background"></div>
     <!-- content box -->
     <div id="content" class="content">
-      <iframe name="content" src="main.html" frameborder="0" scrolling="no" onload="resizeIframe(this)"></iframe>
+
+      <div id="quotes"> 
+        <h4>Daily Quote:</h4>
+        <p id="quote">Quote here.</p>
+        <p id="author">Author here.</p>
+      </div>
+      
+      <div id="about"> 
+        <h4>About Me:</h4>
+        <p>After earning a Bachelor’s Degree in Biology & Economics and a Master’s Degree in Marketing & Management at the University of Virginia, I relocated from my home state of Virginia to experience the start-up world in New York City with Decoded.</p> 
+        <p> At Decoded, I collaborate with global Fortune 500 clients in order to understand their business objectives and the problems they are currently facing when preparing their most valuable asset, their people, for the future of work. </p> 
+      </div>
+
+      <div id="travels"> 
+        <h4>Travel:</h4>
+        <p>Travel here.</p> 
+      </div>
+
+
+      
+     <!-- <iframe name="content" src="main.html" frameborder="0" scrolling="no" onload="resizeIframe(this)"></iframe> -->
     </div>
 
 
@@ -51,7 +78,7 @@
 
 
     <!-- javascript code to load last-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="script.js"></script>
     <script src="quotes.js"></script>
   </body>

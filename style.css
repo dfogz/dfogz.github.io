@@ -3,84 +3,88 @@ html {
 }
 
 body {
-  background-color: rgb(255, 255, 255);
+  background-color: rgba(0, 0, 0, 0);
   font-family: 'Roboto', sans-serif;
   font-weight: 100;
-  font-size: 16px;
   color: rgb(85, 85, 85);
   text-transform: lowercase;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Domine";
-  font-weight: 300;
-  color: rgb(51, 51, 51);
+  text-align: center;
 }
 
 p {
-  line-height: 22px;
+  font-size: 14px;
 }
 
-a {
-  color: rgb(151, 63, 88);
+h1, h3, h4 {
+  font-family: "Domine";
 }
 
-a:hover {
-  color: rgb(151, 63, 88);
-  font-size: 16px;
-  background-color: rgba(0,0,0,0.05);
-  padding: 2px;
-  text-decoration: none;
-  /*text-decoration-color: rgb(151, 63, 88);*/
+h4 {
+  font-size: 20px;
   font-weight: 300;
+}
+
+p#author {
+  color: rgba(85, 85, 85, 0.5);
+  font-size: 10px;
   letter-spacing: 2px;
-  text-transform: uppercase;
 }
 
 /* header box */
 .header {
   text-align: center;
   margin: auto;
-  padding-top: 10px;
-  padding-bottom: 30px;
-  min-height: 100px;
-  width: 80%;
+  padding-top: 2%;
+  width: 100%;
+  background: rgb(255, 255, 255);
+  padding-bottom: 10px;
 }
 
 .header h1 {
-  font-size: 72px;
-  letter-spacing: 2px;
+  letter-spacing: -2px;
   color: rgb(85, 85, 85);
   background: rgba(0,0,0,0.05);
+  font-size: 46px;
+  padding-bottom: 10px;
+  height: 48px;
 }
 
 .header h1 a {
   color: rgb(85, 85, 85);
   background: rgba(0,0,0,0.00);
-  font-size: 72px;
-}
-
-.header h1 a:hover {
-  color: rgb(85, 85, 85);
-  background: rgba(0,0,0,0.00);
-  font-size: 54px;
+  text-decoration: none;
 }
 
 .header h2 {
   font-family: 'Roboto', sans-serif;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 100;
   letter-spacing: 1px;
   color: rgb(85, 85, 85);
 }
 
+.menu a {
+  color: rgb(151, 63, 88);
+}
+
+.menu a:hover {
+  color: rgb(151, 63, 88);
+  font-size: 14px;
+  background-color: rgba(0,0,0,0.05);
+  padding: 2px;
+  text-decoration: none;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
 /* main box */
 .main {
   width: 100%;
-  height: 200px;
+  height: 100%;
   background: rgba(32, 46, 85, 0.9);
   padding-top: 5px;
-  padding-bottom: 30px;
+  padding-bottom: 5px;
   text-align: justify;
   color: rgb(255, 255, 255);
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2), 0 2px 20px 0 rgba(0, 0, 0, 0.6);
@@ -88,18 +92,16 @@ a:hover {
 
 .main h3 {
   color: rgb(255, 255, 255);
+  font-size: 20px;
+  letter-spacing: 2px;
+  margin-bottom: 0px;
 }
 
 .main p {
+  font-size: 14px;
   letter-spacing: 1px;
   color: rgb(195, 199, 210);
-}
-
-.main p a {
-  letter-spacing: 0px;
-  font-weight: 300;
-  color: rgb(255, 255, 255);
-  padding: 2px;
+  line-height: 18px;
 }
 
 /* containing headshot & bio */
@@ -111,12 +113,13 @@ a:hover {
 /* headshot box */
 .headshot {
   float: left;
-  margin-top: -30px;
-  text-align: right;
+  margin-top: -20px;
+  text-align: center;
+  padding: 10px 10px 0px 0px;
 }
 
 .headshot img {
-  width: 270px;
+  width: 75px;
   border-radius: 50%;
   box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.1), 0 1px 30px 0 rgba(0, 0, 0, 0.4);
 }
@@ -125,20 +128,34 @@ a:hover {
 .bio {
   height: 190px;
   padding-left: 20px;
-  align-content: space-around;
+  align-content: center;
   overflow: hidden;
   display: table-cell;
   vertical-align: middle;
 }
 
 /* content box */
-.content {
+.background {
+  margin-left: 15%;
+  margin-right: 15%;
   background-color: rgba(0,0,0,0.05);
-  padding: 50px;
-  margin: auto;
   width: 70%;
-  min-height:100%; position:relative;
+  height: 100%;
+  position: absolute;
+  bottom: 0px;
+  z-index: -100;
 }
+
+.content {
+  height: 100%;
+  width: 70%;
+  padding: 5% 5% 10% 5%;
+  margin: auto;
+  -webkit-box-flex: 1; /* OLD - iOS 6-, Safari 3.1-6 */
+  -moz-box-flex: 1; /* OLD - Firefox 19- */
+  -webkit-flex: 1; /* Chrome */
+  -ms-flex: 1; /* IE 10 */
+  flex: 1; /* NEW, */}
 
 iframe {
   border: 0px;
@@ -149,13 +166,61 @@ iframe {
 /* footber box */
 .footer {
   background: rgba(47, 47, 47, 0.85);
-  padding-top: 15px;
-  padding-bottom: 10px;
+  padding-top: 6px;
+  padding-bottom: 3px;
   text-align: center;
-  font-size: 14px;
+  font-size: 10px;
   color: rgba(255, 255, 255, 0.4);
   box-shadow: 0 5px 1px 0 rgba(0, 0, 0, 0.2), 0 2px 20px 0 rgba(0, 0, 0, 0.6);
   position: fixed;
   bottom: 0px;
   width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+  /* for desktop: */
+  h4 {
+    font-size:  36px;
+    padding-bottom: 10px;
+  }
+  p {
+    font-size:  18px;
+    font-size-adjust: auto;
+  }
+  p#author {
+    font-size: 18px;
+  }
+  .header {
+    padding-bottom: 20px;
+    width: 85%;
+  }
+  .header h1 {
+    height: 76px;
+  }
+  .header h1 a {
+    font-size: 72px;
+    letter-spacing: 2px;
+  }
+  .header h2 {
+    font-size: 24px;
+    letter-spacing: 3px;
+  }
+  .menu a:hover {
+    font-size: 20px;
+  }
+  .main {
+    height: 180px;
+    vertical-align: middle;
+  }
+  .headshot {
+    margin-right: 10px;
+  }
+  .headshot img {
+    width: 200px;
+    margin-top: -25px;
+  }
+  .footer {
+    padding-top: 12px;
+    padding-bottom: 7px;
+    font-size: 12px;  }
 }
