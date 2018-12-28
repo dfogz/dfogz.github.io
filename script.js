@@ -5,6 +5,14 @@ $(document).ready(function(){
   $('#travels').hide();
   $('#social').hide();
 
+  $('#link_quotes').click(function(){ 
+    $('#quotes').show();
+    $('#about').hide();
+    $('#reads').hide();
+    $('#travels').hide();
+    $('#social').hide();
+  });
+  
   $('#link_about').click(function(){ 
     $('#quotes').hide();
     $('#about').show();
