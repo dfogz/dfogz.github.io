@@ -1,4 +1,71 @@
-Hello world! 
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">	
+    <!-- OPTIONAL: description -->
+    <meta name="description" content="">
+    <!-- OPTIONAL: author -->
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="apple-touch-icon" href="icon.png" />
 
-----------------------------
-http://dfogz.github.io
+    <!-- EDIT: title -->
+    <title>dylan fogarty</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,400i|Domine" rel="stylesheet">
+
+    <!-- remove scrolling in iframe -->
+    <script>
+      function resizeIframe(obj) {
+        obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
+      }
+    </script>
+  </head>
+
+  <body>
+    <div id="header" class="header">
+      <h1>Dylan Fogarty</h1>
+      <h2><a href="resume.html" target="content">About </a> | Reads | Travels | Contact</h2>
+    </div>
+
+    <div class="main">
+      <div class="container">
+        <div class="headshot">
+          <img src="headshot.jpg" width="100%">
+        </div>
+        <div class="bio">
+          <div class="row">
+            <div class="col-lg-2 col-lg-offset-1">
+              <h3>tortor posuere ac ut!</h3>
+            </div>
+            <div class="col-lg-6">
+              lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. lorem ipsum dolor sit amet consectetur adipiscing.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- content box -->
+    <div id="content" class="content">
+      <iframe name="content" src="main.html" frameborder="0" scrolling="no" onload="resizeIframe(this)"></iframe>
+    </div>
+
+    
+    <!-- footer box -->
+    <div id="footer" class="footer">
+      &copy; 2019 dylan fogarty
+    </div>
+    
+    
+    <!-- javascript code to load last-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+    <script src="quotes.js"></script>
+  </body>
+</html>

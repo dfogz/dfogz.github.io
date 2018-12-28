@@ -1,0 +1,23 @@
+body {
+  background-color: rgba(0, 0, 0, 0);
+  text-align: center;
+}
+
+p#quote {
+  font-family: "Domine";
+  color: rgba(85, 85, 85, 0.75);
+  font-style: italic;
+  font-size: 30px;
+  font-weight: 300;
+  width: 60%;
+  margin: auto;
+  line-height: 40px;
+}
+
+p#author {
+  padding-top: 20px;
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 6px;
+  color: rgba(85, 85, 85, 0.5);
+}
